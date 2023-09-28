@@ -1,0 +1,28 @@
+<resources>
+    <!--main app values-->
+    <string name="app_name">EnglishDictionary</string>
+    <string name="russian_app_name">Словарь английского</string>
+
+    <!--welcome page values-->
+    <string name="registration_new_user">Зарегистрироваться</string>
+    <string name="registration_existing_user">Войти</string>
+
+    <string name="input_nickname">Введите имя</string>
+    <string name="input_email">Введите почту</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="input_confirm_password">Подтвердите пароль</string>
+
+    <!--main page values-->
+    <string name="start_training">Начать</string>
+    <string name="stop_with_lose_progress">Прервать</string>
+    <string name="change_count">change words count per time</string>
+    <string name="accept_changes">Accept change words count</string>
+    <string name="log_out">Выйти из аккаунта</string>
+    <string name="accept">Завершить</string>
+
+    <!--dialogs values-->
+    <string name="confirmation_dialog_title">Вы действительно хотите выйти из аккаунта?</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+    <string name="input_count_words_hint">Введите новое количество слов за тренеровку</string>
+</resources>

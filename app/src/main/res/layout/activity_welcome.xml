@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_page_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/registration_area"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50sp"
+        android:layout_marginHorizontal="30sp"
+        android:background="@drawable/welcome_page_area">
+
+        <LinearLayout
+            android:id="@+id/choose_the_entering_option"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_new_user"
+                android:textColor="@color/teal_200"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_existing_user"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_up_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/choose_the_entering_option"
+            android:layout_margin="10sp">
+
+            <LinearLayout
+                android:id="@+id/sign_up_inputs_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/sign_up_nickname_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="5sp"
+                    android:hint="@string/input_nickname"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:inputType="text"
+                    android:background="@drawable/welcome_input_area"
+                    android:textColor="@color/teal_200"/>
+
+                <EditText
+                    android:id="@+id/sign_up_email_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="5sp"
+                    android:hint="@string/input_email"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/welcome_input_area"
+                    android:textColor="@color/teal_200"/>
+
+                <EditText
+                    android:id="@+id/sign_up_password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="5sp"
+                    android:hint="@string/input_password"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:inputType="textPassword"
+                    android:background="@drawable/welcome_input_area"
+                    android:textColor="@color/teal_200"/>
+
+                <EditText
+                    android:id="@+id/sign_up_confirm_password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="5sp"
+                    android:hint="@string/input_confirm_password"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:inputType="textPassword"
+                    android:background="@drawable/welcome_input_area"
+                    android:textColor="@color/teal_200"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sign_up_inputs_area"
+                android:gravity="center"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/confirm_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:textSize="11sp"
+                    android:text="@string/registration_new_user"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign_in_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/choose_the_entering_option"
+            android:layout_margin="10sp"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/sign_in_inputs_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35sp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/sign_in_email_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="5sp"
+                    android:hint="@string/input_email"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/welcome_input_area"
+                    android:textColor="@color/teal_200"/>
+
+                <EditText
+                    android:id="@+id/sign_in_password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="5sp"
+                    android:hint="@string/input_password"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:inputType="textPassword"
+                    android:background="@drawable/welcome_input_area"
+                    android:textColor="@color/teal_200"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/confirm_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="@string/registration_existing_user"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/upper_welcome_area"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/registration_area"
+        android:gravity="center"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="200sp"
+        android:background="@drawable/welcome_page_area">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/russian_app_name"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
